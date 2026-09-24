@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sirat — Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #faf9f5;
+    --ink: #16302c;
+    --ink-soft: #4b5f56;
+    --accent: #a1782f;
+    --border: #d7ddd0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f201d;
+      --ink: #e7ece3;
+      --ink-soft: #a8b8ac;
+      --accent: #d4ac54;
+      --border: #23423b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.6 Georgia, 'Times New Roman', serif;
+  }
+  .page { max-width: 700px; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 2rem; margin: 0 0 0.25rem; }
+  .updated { font-family: ui-monospace, monospace; font-size: 0.85rem; color: var(--ink-soft); margin: 0 0 2rem; }
+  h2 { font-size: 1.25rem; margin: 2rem 0 0.5rem; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--accent); }
+  hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+  footer { font-family: ui-monospace, monospace; font-size: 0.8rem; color: var(--ink-soft); margin-top: 3rem; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Sirat — Privacy Policy</h1>
+  <p class="updated">Last updated 7 September 2026</p>
+
+  <h2>No accounts</h2>
+  <p>Sirat has no sign-in and no user accounts. We never ask for your name, email address, or phone number.</p>
+
+  <h2>Location</h2>
+  <p>Your location is used only for three things: calculating prayer times, finding the Qibla direction, and finding nearby halal restaurants — nothing else. Qibla direction is calculated entirely on your device; your coordinates never leave your phone for that feature. Prayer times require sending your coordinates to the AlAdhan API to perform the calculation. Halal restaurant search sends your coordinates to OpenStreetMap's Overpass API by default, or to Google Places if this build is configured with a Maps API key. Each of these is a single, one-time location reading — the app never tracks your location continuously in the background. Only your last known coordinates are stored, on your device only, so the once-daily prayer-time refresh has something to work with without asking again.</p>
+
+  <h2>Advertising</h2>
+  <p>If this build shows ads, they're served by Google AdMob on select screens only — Home, restaurant/mosque search results, the prayer schedule, the Hijri calendar, and Settings. Ads never appear on the Qur'an reader, verse or hadith detail pages, the prayer/adhan flow, duas, or the Qibla compass. If you're in the EEA, UK, or California, Google's own consent form appears before any personalized ad is requested. "Remove Ads" is available as a one-time purchase or a recurring subscription, both processed by Google Play — we never see your payment details.</p>
+
+  <h2>What's stored on your device</h2>
+  <p>Cached prayer schedules, a short-lived cache of restaurant search results, your preferences (calculation method, madhhab, distance unit, theme, notification settings), and the last-known-location pair described above. None of this is uploaded anywhere except as part of the location-based requests described above.</p>
+
+  <h2>Third-party services</h2>
+  <p>Sirat sends data to the following third parties, only as described above: the AlAdhan API (prayer time/Hijri date calculation), OpenStreetMap's Overpass API or Google Places API (nearby halal restaurant search, depending on configuration), Google Maps SDK (rendering the restaurant map, if configured), Google AdMob (serving/measuring ads, if configured), and Google Play Billing (processing in-app purchases). None of these services receive a Sirat-specific identifier — each request carries only what that single call needs. Each service handles the data it receives under its own privacy policy.</p>
+
+  <h2>Children's privacy</h2>
+  <p>Sirat is not directed at children under 13 and does not knowingly collect personal information from them.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, we'll update the date at the top of this page.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:supportsirat@gmail.com">supportsirat@gmail.com</a></p>
+
+  <hr>
+  <footer>Sirat Privacy Policy</footer>
+</div>
+</body>
+</html>
